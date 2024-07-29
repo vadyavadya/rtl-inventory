@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Person from "@/components/Person.vue";
-import Footer from "@/components/Footer.vue"
+import Footer from "@/components/Footer.vue";
+import Inventory from "@/components/Inventory.vue";
 
 </script>
 
@@ -8,6 +9,7 @@ import Footer from "@/components/Footer.vue"
   <main class="main">
     <div class="main-container">
       <Person />
+      <Inventory class="inventory"/>
     </div>
     <Footer />
   </main>
@@ -26,5 +28,9 @@ import Footer from "@/components/Footer.vue"
   margin-bottom: 24px;
   display: flex;
   gap: 24px;
+}
+
+.inventory {
+  flex: 1 0 auto;
 }
 </style>
